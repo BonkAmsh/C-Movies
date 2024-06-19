@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home page</title>
+<style>
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fafafa;
+}
+
+header {
+  box-shadow: 0 0 60px rgb(255, 0, 0);
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 200px;
+  
+}
+
+.profile img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.head {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.head h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.head p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+button {
+  
+  position: relative;
+  background-color: #f70814;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0812;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.movie-list {
+  margin-bottom: 40px;
+}
+
+.movie-list h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.button:after {
+  content: "";
+  background: #fbfbfb;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+footer{
+  position: relative;
+  padding: 20px;
+  margin-top: auto;
+  
+}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="Title.jpg" alt="Netflix Logo">
+    </div>
+    <div class="profile" id="logoutBtn">
+      <img src="logout.png" alt="Profile Icon">
+      
+      </img>
+    </div>
+  </nav>
+  <div class="head">
+    <h1>See Unlimited movies at Zero Prize...</h1>
+  </div>
+</header>
+
+<main>
+  <section class="movie-list">
+    <br>
+    <br>
+    <h2>Choose your Favourite Language....</h2>
+    <br>
+    <br>
+    
+
+    <div class="movies">
+      
+      
+      <div class="T">
+        <button class="button">
+          <a href="https://lxc.0ott.com/telugu-movies/" style="color: #FFFFFF;"> <h1>తెలుగు</h1></a>
+      </button>
+      </div>
+      <div class="K">
+        <button class="button">
+          <a href="https://lxc.0ott.com/kannada-movies/" style="color: #FFFFFF;"> <h1>ಕನ್ನಡ<h1></a>
+      </button>
+      </div>
+      <div class="H">
+        <button class="button">
+          <a href="https://lxc.0ott.com/hindi-movies/" style="color: #FFFFFF;"> <h1> हिन्दी<h1></a>
+      </button>
+      </div>
+      <div class="Ta">
+        <button class="button">
+          <a href="https://lxc.0ott.com/tamil-movies/" style="color: #FFFFFF;"> <h1>தமிழ்<h1></a>
+      </button>
+      </div>
+      <div class="M">
+        <button class="button">
+          <a href="https://lxc.0ott.com/malayalam-movies/" style="color: #FFFFFF;"> <h1>മലയാളം<h1></a>
+      </button>
+      </div>
+      
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 C Movies.</p>
+</footer>
+<script>
+ 
+function logout() {
+    alert("Logging out...");
+    window.location.href = "\login.html";
+   
+}
+
+
+document.getElementById("logoutBtn").addEventListener("click", logout);
+
+</script>
+</body>
+</html>
